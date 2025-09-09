@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1>Customer Satisfaction Survey</h1>
+  <p>We’d love to hear your feedback. Please take a moment to fill out this survey.</p>
+
+  <form action="#" method="post">
+
+    
+    <fieldset>
+      <legend>Basic Information</legend>
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" min="10" max="100"><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male"> Male<br>
+      <input type="radio" id="female" name="gender" value="female"> Female<br>
+      <input type="radio" id="other" name="gender" value="other"> Other<br><br>
+    </fieldset>
+
+    <br>
+
+    
+    <fieldset>
+      <legend>Survey Questions</legend>
+
+      <label>How satisfied are you with our service?</label><br>
+      <input type="radio" name="satisfaction" value="very satisfied"> Very Satisfied<br>
+      <input type="radio" name="satisfaction" value="satisfied"> Satisfied<br>
+      <input type="radio" name="satisfaction" value="neutral"> Neutral<br>
+      <input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied<br>
+      <input type="radio" name="satisfaction" value="very unsatisfied"> Very Unsatisfied<br><br>
+
+      <label>Which features do you use the most? (Select all that apply)</label><br>
+      <input type="checkbox" name="features" value="website"> Website<br>
+      <input type="checkbox" name="features" value="mobile_app"> Mobile App<br>
+      <input type="checkbox" name="features" value="customer_support"> Customer Support<br>
+      <input type="checkbox" name="features" value="delivery"> Delivery Service<br><br>
+
+      <label for="improvement">What would you like us to improve?</label><br>
+      <textarea id="improvement" name="improvement" rows="4" cols="40"></textarea><br><br>
+
+      <label for="rating">Rate your overall experience (1 to 5):</label><br>
+      <select id="rating" name="rating">
+        <option value="">--Select--</option>
+        <option value="1">1 - Very Poor</option>
+        <option value="2">2 - Poor</option>
+        <option value="3">3 - Average</option>
+        <option value="4">4 - Good</option>
+        <option value="5">5 - Excellent</option>
+      </select><br><br>
+    </fieldset>
+
+    <br>
+
+   
+    <input type="submit" value="Submit Survey">
+    <input type="reset" value="Clear Form">
+
+  </form>
+</body>
+</html>
