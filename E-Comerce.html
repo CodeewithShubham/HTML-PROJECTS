@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart - Online Fashion Store</title>
+</head>
+<body style="font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f8f9fa;">
+    
+    <header style="background-color: #3a3a3a; padding: 15px 0; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <h1 style="color: white; margin: 0; font-size: 28px;">Nova<span style="color: #ff6b6b;">Cart</span></h1>
+            
+            <div style="display: flex; align-items: center;">
+                <a href="#search" style="margin-right: 20px; color: white; text-decoration: none;">
+                    <span style="background: #ff6b6b; padding: 8px 12px; border-radius: 4px;">Search</span>
+                </a>
+                <a href="#cart" style="margin-right: 20px; color: white; text-decoration: none;">
+                    <span style="background: #ff6b6b; padding: 8px 12px; border-radius: 4px;">Cart (0)</span>
+                </a>
+                <a href="#account" style="color: white; text-decoration: none;">
+                    <span style="background: #ff6b6b; padding: 8px 12px; border-radius: 4px;">Account</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <nav style="background-color: #ffffff; padding: 15px 0; text-align: center; border-bottom: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <a href="#home" style="margin: 0 15px; text-decoration: none; color: #ff6b6b; font-weight: bold;">Home</a>
+            <a href="#women" style="margin: 0 15px; text-decoration: none; color: #3a3a3a;">Women</a>
+            <a href="#men" style="margin: 0 15px; text-decoration: none; color: #3a3a3a;">Men</a>
+            <a href="#kids" style="margin: 0 15px; text-decoration: none; color: #3a3a3a;">Kids</a>
+            <a href="#accessories" style="margin: 0 15px; text-decoration: none; color: #3a3a3a;">Accessories</a>
+            <a href="#sale" style="margin: 0 15px; text-decoration: none; color: #e74c3c; font-weight: bold;">Sale</a>
+        </div>
+    </nav>
+
+
+    <section id="home" style="text-align: center; padding: 60px 20px; background: linear-gradient(to right, #3a3a3a, #5a5a5a); color: white;">
+        <h2 style="font-size: 2.8em; margin-bottom: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Summer Collection 2023</h2>
+        <p style="font-size: 1.3em; max-width: 700px; margin: 0 auto 30px;">Discover the latest trends and styles for the season</p>
+        <a href="#shop-now" style="display: inline-block; background: #ff6b6b; color: white; padding: 15px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">SHOP NOW</a>
+    </section>
+
+    
+    <section style="padding: 60px 20px; text-align: center; background: white;">
+        <h2 style="text-align: center; margin-bottom: 50px; color: #3a3a3a; font-size: 2.2em;">Shop by Category</h2>
+        
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <a href="#women" style="flex: 1; min-width: 250px; max-width: 350px; text-decoration: none; color: #333; display: block; background: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <div style="height: 200px; background: linear-gradient(to right, #ffcbcb, #ff6b6b); display: flex; align-items: center; justify-content: center;">
+                    <h3 style="color: white; font-size: 24px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Women</h3>
+                </div>
+                <div style="padding: 20px;">
+                    <p>Explore our women's collection featuring the latest fashion trends</p>
+                </div>
+            </a>
+            
+            <a href="#men" style="flex: 1; min-width: 250px; max-width: 350px; text-decoration: none; color: #333; display: block; background: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <div style="height: 200px; background: linear-gradient(to right, #a0c4ff, #3a7bd5); display: flex; align-items: center; justify-content: center;">
+                    <h3 style="color: white; font-size: 24px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Men</h3>
+                </div>
+                <div style="padding: 20px;">
+                    <p>Discover stylish men's clothing and accessories</p>
+                </div>
+            </a>
+            
+            <a href="#accessories" style="flex: 1; min-width: 250px; max-width: 350px; text-decoration: none; color: #333; display: block; background: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <div style="height: 200px; background: linear-gradient(to right, #ffd6a5, #ff9a3d); display: flex; align-items: center; justify-content: center;">
+                    <h3 style="color: white; font-size: 24px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Accessories</h3>
+                </div>
+                <div style="padding: 20px;">
+                    <p>Complete your look with our accessory collection</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+   
+    <section style="padding: 60px 20px; background-color: #f8f9fa;">
+        <h2 style="text-align: center; margin-bottom: 50px; color: #3a3a3a; font-size: 2.2em;">Featured Products</h2>
+        
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            
+            <div style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <div style="height: 250px; background: linear-gradient(45deg, #ff9a9e, #fad0c4); position: relative;">
+                    <span style="position: absolute; top: 15px; right: 15px; background: #ff6b6b; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">New</span>
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px; color: #3a3a3a;">Summer Floral Dress</h3>
+                    <p style="color: #666; margin: 0 0 15px;">Elegant floral pattern with comfortable fit</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: #ff6b6b; font-size: 1.2em;">Rs.499</span>
+                        <a href="#add-to-cart" style="background: #3a3a3a; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <div style="height: 250px; background: linear-gradient(45deg, #a1c4fd, #c2e9fb); position: relative;">
+                    <span style="position: absolute; top: 15px; right: 15px; background: #e74c3c; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">Sale</span>
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px; color: #3a3a3a;">Denim Jacket</h3>
+                    <p style="color: #666; margin: 0 0 15px;">Classic denim jacket for all occasions</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: #ff6b6b; font-size: 1.2em;">Rs599</span>
+                        <a href="#add-to-cart" style="background: #3a3a3a; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <div style="height: 250px; background: linear-gradient(45deg, #ffecd2, #fcb69f);"></div>
+                <div style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px; color: #3a3a3a;">Casual Sneakers</h3>
+                    <p style="color: #666; margin: 0 0 15px;">Comfortable sneakers for everyday wear</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: #ff6b6b; font-size: 1.2em;">Rs.649</span>
+                        <a href="#add-to-cart" style="background: #3a3a3a; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <div style="height: 250px; background: linear-gradient(45deg, #d4fc79, #96e6a1);"></div>
+                <div style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px; color: #3a3a3a;">Leather Handbag</h3>
+                    <p style="color: #666; margin: 0 0 15px;">Elegant handbag with ample storage space</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: #ff6b6b; font-size: 1.2em;">Rs.799</span>
+                        <a href="#add-to-cart" style="background: #3a3a3a; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="#view-all" style="display: inline-block; background: #3a3a3a; color: white; padding: 12px 30px; text-decoration: none; border-radius: 30px; font-weight: bold;">View All Products</a>
+        </div>
+    </section>
+
+    
+    <section style="padding: 60px 20px; background: linear-gradient(to right, #3a3a3a, #5a5a5a); color: white; text-align: center;">
+        <h2 style="font-size: 2.5em; margin-bottom: 20px;">Special Summer Sale</h2>
+        <p style="font-size: 1.2em; max-width: 700px; margin: 0 auto 30px;">Up to 50% off on selected items. Limited time offer!</p>
+        
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 800px; margin: 0 auto;">
+            <div style="background: rgba(255,255,255,0.15); padding: 15px 25px; border-radius: 8px;">
+                <span style="font-size: 2em; font-weight: bold;">50%</span>
+                <p>Women's Dresses</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.15); padding: 15px 25px; border-radius: 8px;">
+                <span style="font-size: 2em; font-weight: bold;">30%</span>
+                <p>Men's Footwear</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.15); padding: 15px 25px; border-radius: 8px;">
+                <span style="font-size: 2em; font-weight: bold;">40%</span>
+                <p>Accessories</p>
+            </div>
+        </div>
+        
+        <a href="#sale" style="display: inline-block; background: #ff6b6b; color: white; padding: 15px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 30px;">SHOP THE SALE</a>
+    </section>
+
+    
+    <section style="padding: 60px 20px; background: white;">
+        <h2 style="text-align: center; margin-bottom: 50px; color: #3a3a3a; font-size: 2.2em;">What Our Customers Say</h2>
+        
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <div style="flex: 1; min-width: 300px; max-width: 350px; background: #f8f9fa; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: #ff6b6b; border-radius: 50%; margin-right: 15px;"></div>
+                    <div>
+                        <h4 style="margin: 0;">Vaishali</h4>
+                        <p style="margin: 0; color: #666;">New Delhi</p>
+                    </div>
+                </div>
+                <p style="color: #555;">"The quality of the clothes I purchased exceeded my expectations. Shipping was fast and the customer service was excellent!"</p>
+            </div>
+            
+            <div style="flex: 1; min-width: 300px; max-width: 350px; background: #f8f9fa; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: #3a7bd5; border-radius: 50%; margin-right: 15px;"></div>
+                    <div>
+                        <h4 style="margin: 0;">Ankit Lohia</h4>
+                        <p style="margin: 0; color: #666;">Haryana</p>
+                    </div>
+                </div>
+                <p style="color: #555;">"I've been shopping with FashionHub for over a year now, and I'm always impressed with their trendy collections and affordable prices."</p>
+            </div>
+            
+            <div style="flex: 1; min-width: 300px; max-width: 350px; background: #f8f9fa; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: #96e6a1; border-radius: 50%; margin-right: 15px;"></div>
+                    <div>
+                        <h4 style="margin: 0;">Karishma</h4>
+                        <p style="margin: 0; color: #666;">New Delhi</p>
+                    </div>
+                </div>
+                <p style="color: #555;">"The return process was so easy when I needed to exchange a item. Will definitely be shopping here again!"</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section style="padding: 60px 20px; background: #ff6b6b; color: white; text-align: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 20px;">Join Our Newsletter</h2>
+        <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1em;">Subscribe to our newsletter and get 10% off your first order. Stay updated with our latest trends and exclusive offers.</p>
+        
+        <form style="max-width: 500px; margin: 0 auto;">
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <input type="email" placeholder="Your Email Address" style="flex: 1; min-width: 250px; padding: 15px; border: none; border-radius: 30px;">
+                <button type="submit" style="background: #3a3a3a; color: white; border: none; padding: 15px 30px; border-radius: 30px; font-weight: bold; cursor: pointer;">Subscribe</button>
+            </div>
+        </form>
+    </section>
+
+ 
+    <footer style="background-color: #2c2c2c; color: white; padding: 60px 20px 30px;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; margin-bottom: 40px;">
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #ff6b6b; margin-bottom: 20px;">NovaCart</h3>
+                <p>Your one-stop destination for trendy and affordable fashion.</p>
+                <div style="margin-top: 20px;">
+                    <a href="#facebook" style="display: inline-block; width: 36px; height: 36px; background: #3a3a3a; border-radius: 50%; text-align: center; line-height: 36px; margin-right: 10px; color: white; text-decoration: none;">f</a>
+                    <a href="#instagram" style="display: inline-block; width: 36px; height: 36px; background: #3a3a3a; border-radius: 50%; text-align: center; line-height: 36px; margin-right: 10px; color: white; text-decoration: none;">ig</a>
+                    <a href="#twitter" style="display: inline-block; width: 36px; height: 36px; background: #3a3a3a; border-radius: 50%; text-align: center; line-height: 36px; color: white; text-decoration: none;">t</a>
+                </div>
+            </div>
+            
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #ff6b6b; margin-bottom: 20px;">Shop</h4>
+                <p><a href="#women" style="color: white; text-decoration: none;">Women</a></p>
+                <p><a href="#men" style="color: white; text-decoration: none;">Men</a></p>
+                <p><a href="#kids" style="color: white; text-decoration: none;">Kids</a></p>
+                <p><a href="#accessories" style="color: white; text-decoration: none;">Accessories</a></p>
+                <p><a href="#sale" style="color: #ff6b6b; text-decoration: none;">Sale</a></p>
+            </div>
+            
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #ff6b6b; margin-bottom: 20px;">Company</h4>
+                <p><a href="#about" style="color: white; text-decoration: none;">About Us</a></p>
+                <p><a href="#careers" style="color: white; text-decoration: none;">Careers</a></p>
+                <p><a href="#contact" style="color: white; text-decoration: none;">Contact Us</a></p>
+                <p><a href="#blog" style="color: white; text-decoration: none;">Blog</a></p>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px;">
+                <h4 style="color: #ff6b6b; margin-bottom: 20px;">Contact Info</h4>
+                <p>123 Fashion Street, Trend District</p>
+                <p>New Delhi, NY 100011</p>
+                <p>Email: novacart@gmail.com</p>
+                <p>Phone: (+91)7045897458</p>
+            </div>
+        </div>
+        
+        <hr style="border: none; border-top: 1px solid #444; margin: 20px 0;">
+        
+        <div style="text-align: center; color: #999; padding-top: 20px;">
+            <p>&copy; 2025 NovaCart. All rights reserved.</p>
+            <p>
+                <a href="#privacy" style="color: #999; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+                <a href="#terms" style="color: #999; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+                <a href="#shipping" style="color: #999; text-decoration: none; margin: 0 10px;">Shipping Policy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
